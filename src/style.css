@@ -13,17 +13,64 @@ body {
 
 .main-header,
 .main-footer {
-  width: 100%;
+  width: 80%;
   height: 75px;
+  margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #ddd;
   border: 3px solid green;
+  border-radius: 5px;
 }
 
 .main-header p,
 .main-footer p {
   font-size: 23px;
   font-weight: bold;
+}
+
+.user-info,
+.address-info {
+  max-width: 700px;
+  margin: 20px auto 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  border: 2px solid green;
+}
+
+.users-list article p,
+.user-info p,
+.address-info p {
+  color: #999;
+  line-height: 24px;
+  margin-top: 5px;
+}
+
+.address-info h1,
+.user-info h1 {
+  font-size: 32px;
+}
+
+.users-list article a,
+.user-info a {
+  height: 40px;
+  border: 2px solid rgb(76, 223, 76);
+  border-radius: 5px;
+  background: none;
+  color: rgb(76, 223, 76);
+  font-weight: bold;
+  font-size: 15px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.users-list article a:hover,
+.user-info a:hover {
+  color: white;
+  background-color: rgb(76, 223, 76);
 }

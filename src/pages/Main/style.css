@@ -5,16 +5,40 @@
 }
 
 .users-list article {
-  background: #fff;
-  border: 1px solid green;
+  background: white;
+  border: 2px solid green;
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 20px;
 }
 
-.users-list article p {
-  font-size: 16px;
-  color: #999;
-  margin-top: 5px;
-  line-height: 24px;
+.users-list .actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.users-list .actions button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 0;
+  background-color: white;
+  color: rgb(76, 223, 76);
+  font-size: 15px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.users-list .actions button:hover {
+  background-color: green;
+  cursor: pointer;
+}
+
+.users-list .actions button[disabled] {
+  opacity: 0.8;
+}
+
+.users-list .actions button[disabled]:hover {
+  opacity: 0.8;
+  cursor: default;
+  background-color: white;
 }
